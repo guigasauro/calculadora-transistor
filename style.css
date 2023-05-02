@@ -11,6 +11,11 @@ h1{
     margin-block-start: 0em;
     color: white;
 }
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .input_area{
     font-size: small;
     width: 100%;

@@ -4,8 +4,13 @@ function calculate(){
     var Vcc=document.getElementById("Vcc").value;
     var Rc=document.getElementById("Rc").value;
     var Ganho=document.getElementById("Ganho").value;
+    var Aprox=document.getElementById("aprox").value;
 
-    var Ib = (Vbb/Rb)*(10 ** 6);
+    if(Aprox == 'primeira'){
+        var Ib = (Vbb/Rb)*(10 ** 6);
+    }else{
+        var Ib = ((Vbb - 0.7)/Rb)*(10 ** 6);
+    }
     var Ic = (Ib * Ganho)*(10 ** -3);
     var Ie = (Ib*(10 ** -3)) + Ic;
     var Vce = Vcc - (Rc*(Ic*(10 ** -3)));

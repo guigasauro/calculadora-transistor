@@ -31,8 +31,13 @@
                     <h2>Ganho (&beta;):</h2>
                     <input id="Ganho" type="number">
                 </div>
-                <button onclick="calculate()">CALCULAR</button>
-
+                <div class="options">
+                    <select id="aprox" style="margin-right: 25%;">
+                        <option value="primeira">Ideal</option>
+                        <option value="segunda">2ª aproximação</option>
+                    </select>
+                    <button onclick="calculate()" style="width: 10em;">CALCULAR</button>
+                </div>
                 <div class="calculate">
                     <div class="text_area">
                         <h2>Ib - Corrente da Base (µA):</h2>
